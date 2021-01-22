@@ -27,11 +27,6 @@ export default class Footer extends Component{
         return (
             <footer className = "todo-app__footer" style = {{display : this.state.display}}>
                 <div className = "todo-app__total">{"total: " + this.props.num_left}</div>
-                {/*<div className = "todo-app__view-buttons">
-                    <ViewButton text = {"All"} showMode = {this.props.showMode} changeShowMode = {(mode)=>this.props.changeShowMode(mode)}/>
-                    <ViewButton text = {"Active"} showMode = {this.props.showMode} changeShowMode = {(mode)=>this.props.changeShowMode(mode)}/>
-                    <ViewButton text = {"Completed"} showMode = {this.props.showMode} changeShowMode = {(mode)=>this.props.changeShowMode(mode)}/>
-                </div>*/}
                 <div className = "todo-app__clean">
                     <ClearButton text = {"Claer"} changeIsClearCompleted = {()=>this.props.changeIsClearCompleted()}/>
                 </div>

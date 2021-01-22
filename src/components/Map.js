@@ -29,7 +29,6 @@ let nowLoc = {
 };
 
 function onMapClick(e){
-    //console.log(e.latLng.lat())
     nowLoc = {
         lat: e.latLng.lat(),
         lng: e.latLng.lng()
@@ -46,20 +45,6 @@ function locOnClick(loc){
     WrappedMap = withScriptjs(withGoogleMap(map))
 }
 
-/*function map(){
-    return(
-        <GoogleMap 
-            defaultZoom={16} 
-            defaultCenter={{lat: 25.018, lng: 121.540}}
-            options = {options}
-            onClick = {(e)=>onMapClick(e)}
-        >
-            {busData.Buses.map((bus)=>(
-                <Marker key={bus.PlateNumb} position={{lat:bus.BusPosition.PositionLat, lng:bus.BusPosition.PositionLon}}/>
-            ))}
-        </GoogleMap>
-    )   
-};*/
 
 function map(){
     return(
@@ -76,65 +61,6 @@ function map(){
 
 let WrappedMap = withScriptjs(withGoogleMap(map))
 
-
-/*export default function App() {
-    const { isLoaded, loadError } = useLoadScript({
-      googleMapsApiKey: "AIzaSyCF_WVOfafinjM09YWk4Wcp_zotxdN7jDQ",
-      libraries,
-    });
-    const [markers, setMarkers] = React.useState([]);
-    const [selected, setSelected] = React.useState(null);
-    
-  
-    const onMapClick = React.useCallback((e) => {
-      setMarkers((current) => [
-        ...current,
-        {
-          lat: e.latLng.lat(),
-          lng: e.latLng.lng(),
-          time: new Date(),
-        },
-      ]);q
-    }, []);
-  
-    const mapRef = React.useRef();
-    const onMapLoad = React.useCallback((map) => {
-      mapRef.current = map;
-    }, []);
-  
-    const panTo = React.useCallback(({ lat, lng }) => {
-      mapRef.current.panTo({ lat, lng });
-      mapRef.current.setZoom(14);
-    }, []);
-  
-    if (loadError) return "Error";
-    if (!isLoaded) return "Loading...";
-  
-    return (
-      <div>
-  
-        <GoogleMap
-          id="map"
-          mapContainerStyle={mapContainerStyle}
-          zoom={16}
-          center={center}
-          options={options}
-          onClick={onMapClick}
-          onLoad={onMapLoad}
-        >
-          {markers.map((marker) => (
-            <Marker
-              key={`${marker.lat}-${marker.lng}`}
-              position={{ lat: marker.lat, lng: marker.lng }}
-              onClick={() => {
-                setSelected(marker);
-              }}
-            />
-          ))}
-        </GoogleMap>
-      </div>
-    );
-}*/
 
 
 export default class Map extends Component{
@@ -155,7 +81,6 @@ export default class Map extends Component{
 
     render(){
         if(this.props.isGoToAct === true){
-            console.log(this.props.goTo)
             locOnClick(this.props.goTo)
             this.props.changeIsGoToAct()
         }

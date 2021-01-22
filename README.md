@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# [109-1] Web Programming Final 
+## (Group 93) 旅遊/美食地圖
+組員：電機二 吳紹睿 B08901113
+## Deployed 連結：
+https://ray-final.herokuapp.com/
+## Demo 影片連結：
+https://youtu.be/feIpgTzPJW0
+## 在做什麼呢：
+使用google map紀錄餐廳/景點名稱和位置，並且可以加上自己的描述。
+## 操作方式：
+1. 在地圖上點擊一下
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. 點擊地圖下方按鈕(Insert Location)
 
-## Available Scripts
+3. 完成左側名稱/敘述
 
-In the project directory, you can run:
+4. 點擊Save按鈕
 
-### `yarn start`
+5. 可以點擊Go按鈕顯示餐廳/景點位置
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+6. 可以點擊clear按鈕刪除全部地點
+## Frontend
+React
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Google Map API
 
-### `yarn test`
+antd
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Backend
+Websocket
 
-### `yarn build`
+MongoDB
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 參考程式碼
+作業3 & 作業6
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 心得
+這次專題意外地自己一個人一組，又因為我本身沒有網服基礎，自學的過程可以說是很漫長又很煎熬，加上電機系大二的課程繁重，學期中沒什麼時間可以好好學習課堂上提到的東西，而且期末後的時間真的有限，導致我這幾天幾乎離不開電腦，所有前後端都要自己搞定，之間遇到無數次問題，功能也經過無數次的縮減，真的做到很崩潰。但我還是盡力做出了一個小網站，也學習到了不少東西，或許過程很痛苦，但能做出一個自己的第一份網路服務，成就感還是有的。謝謝這堂課的老師和助教，你們都辛苦了!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 小組貢獻
+電機二 吳紹睿 100%
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
