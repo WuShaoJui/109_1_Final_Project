@@ -1,0 +1,11 @@
+.todo-app__root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2em;
+  margin: 0 auto;
+  /* margin-top: 7em; */
+  width: 100em;
+  
+  
+}
