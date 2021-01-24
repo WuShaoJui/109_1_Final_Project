@@ -201,7 +201,6 @@ export default class Section extends Component{
     }
 
     render(){
-        console.log(todos[0] +"\n" + this.state.isInit)
         return(
             <section className = "todo-app__main">
                 <Input createNewTodo = {(name, des, loc)=>this.createNewTodo(name, des, loc)} nowLoc={this.props.nowLoc} 

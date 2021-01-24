@@ -11,12 +11,12 @@ const app = express()
 const server = http.createServer(app)
 const wss = new WebSocket.Server({ server })
 
-if (!process.env.MONGO_URL) {
+/*if (!process.env.MONGO_URL) {
   console.error('Missing MONGO_URL!!!')
   process.exit(1)
-}
+}*/
 
-mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect("mongodb+srv://newUser:CmMA6vnYK9vNLjv6@cluster0.9t688.mongodb.net/Cluster0?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
